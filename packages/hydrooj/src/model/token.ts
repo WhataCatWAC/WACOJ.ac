@@ -1,6 +1,6 @@
 import { Filter } from 'mongodb';
 import { TokenDoc } from '../interface';
-import * as bus from '../service/bus';
+import bus from '../service/bus';
 import db from '../service/db';
 import { ArgMethod } from '../utils';
 
@@ -67,7 +67,7 @@ class TokenModel {
             },
             { returnDocument: 'after' },
         );
-        return res.value;
+        return res;
     }
 
     @ArgMethod

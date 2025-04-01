@@ -1,6 +1,5 @@
-/* eslint-disable @typescript-eslint/no-shadow */
 import { Logger } from './logger';
-import * as bus from './service/bus';
+import bus from './service/bus';
 
 let terminating = false;
 async function terminate() {
